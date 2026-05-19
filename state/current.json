@@ -1,0 +1,20 @@
+{
+  "company_name": "Bremspace",
+  "status": "Foundation Phase",
+  "current_focus": "Infrastructure and Persistence Setup",
+  "tech_stack": {
+    "frontend": "Next.js",
+    "styling": "Tailwind CSS",
+    "database": "PostgreSQL (Supabase/Neon)",
+    "hosting": "Vercel"
+  },
+  "active_projects": [],
+  "agent_roster": [
+    {
+      "role": "CEO",
+      "id": "hermes-main",
+      "status": "Active"
+    }
+  ],
+  "last_updated": "2026-05-19T15:55:00Z"
+}
