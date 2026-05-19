@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  hermes:
+    image: nikolaik/python-nodejs:python3.11-nodejs20
+    container_name: bremspace-ceo
+    restart: always
+    volumes:
+      - ./data:/opt/data
+      - ./skills:/opt/skills
+      - ./config:/opt/config
+    environment:
+      - TZ=Asia/Jakarta
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    ports:
+      - "3100:3100"
+    working_dir: /opt/hermes
+    entrypoint: ["/bin/bash", "-c", "./bootstrap.sh && python3 -m hermes.main"]
+
+networks:
+  default:
+    name: bremspace-net
